@@ -15,9 +15,9 @@ func main() {
 
 	fmt.Println("These are the new names", names)
 
-	names = append(names[1:3]) // This is how we do a slice
-	fmt.Println(names)
-	heros := make([]string, 3, 3)
+	names = names[1:4] // This is how we do a slice
+	fmt.Println("This is a slice", names)
+	heros := make([]string, len(names))
 	/**
 	This is how we create a slice, type,length, capacity
 	The legth and capacity does not matter since go recognizes that its a string and it will not be capped!
