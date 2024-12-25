@@ -28,27 +28,20 @@ func main() {
 
 **/
 
-/**
-1. An array has a length and element type
+// 1. An array has a length and element type
 
-ie var name [4]string
-type = string
-lenght = 4
+// ie var name [4]string
+// type = string
+// lenght = 4
 
-2. A dedicatedtslice has the following specification
-[]T
-T = type
+// 2. A dedicatedtslice has the following specification
+// []T
+// T = type
 
-3. A slice can be created using
-	. letters := []string {"a"}
-	. var letters []string
-	. func make([]T, len, cap) []T
-	=> When we use the make, it takes a type, length and an optional capacity. It allocates an array and returns a slice that refers to that array!
+// 	3. A slice can be created using
+// 	. letters := []string {"a"}
+// 	. var letters []string
+// 	. func make([]T, len, cap) []T
+// 	=> When we use the make, it takes a type, length and an optional capacity. It allocates an array and returns a slice that refers to that array!
 
-	=> The make() can be used to create both slices and maps
-
-
-
-
-
-**/
+// 	=> The make() can be used to create both slices and maps;
