@@ -9,6 +9,6 @@ import (
 
 func main() {
 	fmt.Println("Welcome to our Rater")
-	name,myNumRating := frontend.Frontend()
-	backend.Backend(name,myNumRating)
+	name, myNumRating := frontend.Frontend()
+	backend.Backend(name, myNumRating)
 }
