@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-
 	"github.com/paulwritescode/rater/v2/backend"
 	"github.com/paulwritescode/rater/v2/frontend"
 )

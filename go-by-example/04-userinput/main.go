@@ -26,7 +26,17 @@ func main() {
 	// myname, _ := reader.ReadString('\n')
 	// fmt.Println(myname)
 
+	// we first have to create our reader
+
 	reader := bufio.NewReader(os.Stdin)
+	// prompt the user to enter something
+	fmt.Println("Enter your name:")
+	// capture the user input to a variable using the reader
+	// the reader returns two items, error and the input
+	my_name, _ := reader.ReadString('\n')
+	fmt.Println(my_name)
+
+	// reader := bufio.NewReader(os.Stdin)
 	fmt.Print("Enter your Rating: ")
 	myRating, _ := reader.ReadString('\n')
 	myNumRating, _ := strconv.ParseFloat(strings.TrimSpace(myRating), 64)

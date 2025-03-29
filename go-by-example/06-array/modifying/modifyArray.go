@@ -2,14 +2,17 @@ package main
 
 import "fmt"
 
-func modifyArray(array *[5]int) {
-	array[3] = 300
+func modArray(array *[5]int) {
+	array[4] = 58093
 }
 
 func main() {
-	array := [5]int{1, 2, 3, 4, 5}
+	array := [5]int{2, 3, 4, 5, 6}
 	fmt.Println(array)
-	modifyArray(&array)
+	modArray(&array)
 	fmt.Println(array)
-	fmt.Println("modification affects the same array because we are pointing to the original array to be modified using the &")
 }
+
+/*
+using the pointer to avoind changing a copy of the array
+*/
